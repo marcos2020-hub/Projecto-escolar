@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hWHOK0zlCPTuA43QM21TAB1MPTtV71qmlKj0Zqo7IHybaI+aMFPeVNkQv6RhYxRJjg818/cHiOfXVvYFd9KffA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MARCOS\\Documents\\Visual Studio 2019\\CONTROLESCOLAR\\CONTROLESCOLAR\\Dt\\DataLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MARCOS\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\MARCOS\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

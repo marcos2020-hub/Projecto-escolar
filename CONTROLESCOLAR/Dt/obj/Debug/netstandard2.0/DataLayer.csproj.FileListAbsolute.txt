@@ -1,0 +1,18 @@
+C:\Users\Wilirambo\source\repos\DatabaseConection\Dt\bin\Debug\netstandard2.0\app.db
+C:\Users\Wilirambo\source\repos\DatabaseConection\Dt\bin\Debug\netstandard2.0\DataLayer.deps.json
+C:\Users\Wilirambo\source\repos\DatabaseConection\Dt\bin\Debug\netstandard2.0\DataLayer.dll
+C:\Users\Wilirambo\source\repos\DatabaseConection\Dt\bin\Debug\netstandard2.0\DataLayer.pdb
+C:\Users\Wilirambo\source\repos\DatabaseConection\Dt\obj\Debug\netstandard2.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\Wilirambo\source\repos\DatabaseConection\Dt\obj\Debug\netstandard2.0\DataLayer.AssemblyInfo.cs
+C:\Users\Wilirambo\source\repos\DatabaseConection\Dt\obj\Debug\netstandard2.0\DataLayer.dll
+C:\Users\Wilirambo\source\repos\DatabaseConection\Dt\obj\Debug\netstandard2.0\DataLayer.pdb
+C:\Users\Wilirambo\source\repos\DatabaseConection\Dt\obj\Debug\netstandard2.0\DataLayer.csprojAssemblyReference.cache
+C:\Users\MARCOS\Documents\Visual Studio 2019\CONTROLESCOLAR\CONTROLESCOLAR\Dt\bin\Debug\netstandard2.0\DataLayer.deps.json
+C:\Users\MARCOS\Documents\Visual Studio 2019\CONTROLESCOLAR\CONTROLESCOLAR\Dt\bin\Debug\netstandard2.0\DataLayer.dll
+C:\Users\MARCOS\Documents\Visual Studio 2019\CONTROLESCOLAR\CONTROLESCOLAR\Dt\bin\Debug\netstandard2.0\DataLayer.pdb
+C:\Users\MARCOS\Documents\Visual Studio 2019\CONTROLESCOLAR\CONTROLESCOLAR\Dt\obj\Debug\netstandard2.0\DataLayer.csprojAssemblyReference.cache
+C:\Users\MARCOS\Documents\Visual Studio 2019\CONTROLESCOLAR\CONTROLESCOLAR\Dt\obj\Debug\netstandard2.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\MARCOS\Documents\Visual Studio 2019\CONTROLESCOLAR\CONTROLESCOLAR\Dt\obj\Debug\netstandard2.0\DataLayer.AssemblyInfo.cs
+C:\Users\MARCOS\Documents\Visual Studio 2019\CONTROLESCOLAR\CONTROLESCOLAR\Dt\obj\Debug\netstandard2.0\DataLayer.dll
+C:\Users\MARCOS\Documents\Visual Studio 2019\CONTROLESCOLAR\CONTROLESCOLAR\Dt\obj\Debug\netstandard2.0\DataLayer.pdb
+C:\Users\MARCOS\Documents\Visual Studio 2019\CONTROLESCOLAR\CONTROLESCOLAR\Dt\obj\Debug\netstandard2.0\DataLayer.csproj.CoreCompileInputs.cache
