@@ -15,12 +15,15 @@ namespace ControlEscolar
         // para que escoja editar o crear una nueva nota 
 
         public NOTAS NotaCorriente { get; set; }
+		bool esnuevo = false;
 
-        public FormnNotas()
+		public FormnNotas()
         {
             InitializeComponent();
             panel1.BackColor = Color.FromArgb(125, Color.Tomato);
-        }
+			MostrarNotas.ReadOnly = true;
+
+		}
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -44,7 +47,7 @@ namespace ControlEscolar
             // por que aqui tienes que avriguar si el usuario es editando o creado un post nuevo 
             // pero ya me doy cuenta de que no necesito la variable esnuevo  por que puedo averiguarlo con la otra 
             // si la nota esta en null pues es una nota nueva 7
-            var esnuevo = false;
+            
             if (NotaCorriente == null)
             {
                 var dialog = MessageBox.Show("No has eligido una nota deseas crear una nueva ?",
@@ -70,8 +73,8 @@ namespace ControlEscolar
                         con.Add(NotaCorriente);
                     else
                     {
-                        //hay un error con linq no esta compilando bien a sql voy a mirar depues
-                        var resultado = con.NOTAS.ToList().FirstOrDefault(x => x.ID == NotaCorriente.ID);
+						//hay un error con linq no esta compilando bien a sql voy a mirar depues
+						var resultado = NotaCorriente;
                         if (resultado == null)
                         {
                             throw new Exception("LaNota no se encontro ");
@@ -85,17 +88,18 @@ namespace ControlEscolar
 
 
                     con.SaveChanges();
-
-
-                    CursosText.Text = NotaCorriente.CURSO;
+					MessageBox.Show("Sus Cambios han sido Guardados");
+					esnuevo = false;
+					CursosText.Text = NotaCorriente.CURSO;
                     DescripcionText.Text = NotaCorriente.DESCRIPCION;
                     NotaText.Text = NotaCorriente.NOTA;
                     TrimestreText.Text = NotaCorriente.TRIMESTRE;
                     IDText.Text = NotaCorriente.ID.ToString();
 
                     MostrarNotas.DataSource = con.NOTAS.ToList<NOTAS>();
+					
+				}
 
-                }
                 catch (Exception a)
                 {
 
@@ -114,16 +118,16 @@ namespace ControlEscolar
                 using (var contexto = new DbContexto())
                 {
                     // trim borra los espac // esta falladon la compilacion de C# a sql luego miro por que pero te lo resuelvo asi mientras
-                    var resultado = contexto.NOTAS.Where(x =>
-                    x.CURSO.Contiene
-                    (CursosText.Text)
-                     || x.DESCRIPCION
+                    var resultado = contexto.NOTAS.Where(x => 
+                    x.CURSO.Trim().ToLower().Contains
+                    (CursosText.Text.ToLower().Trim())
+                     && x.DESCRIPCION
                     .Contiene(DescripcionText.Text)
-                     || x.ID.ToString()
+                     && x.ID.ToString()
                     .Contiene(IDText.Text)
-                      || x.TRIMESTRE
+                      && x.TRIMESTRE
                     .Contiene(TrimestreText.Text)
-                      || x.NOTA
+                     && x.NOTA
                     .Contiene(NotaText.Text)).ToList();
                     // si la lista es menor a 1 entoces no se encontro nada y terminamos la funcion con return;
                     if (resultado.Count < 1)
@@ -165,9 +169,45 @@ namespace ControlEscolar
         private void button6_Click(object sender, EventArgs e)
         {
             NotaCorriente = null;
-            // y el resto de codigo para limpiar
+			
+			CursosText.Text = string.Empty;
+			DescripcionText.Text = string.Empty;
+			NotaText.Text = string.Empty;
+			TrimestreText.Text = string.Empty;
+			IDText.Text = string.Empty;
+			// y el resto de codigo para limpiar
 
-        }
-    }
+		}
+
+		private void button4_Click(object sender, EventArgs e)
+		{
+			if (esnuevo || NotaCorriente == null) {
+				MessageBox.Show("Para poder borrar tienes que elegir una nota de la base de datos");
+}	
+			var dialog = MessageBox.Show("Esta seguro de borrar esta nota?",
+		 "Guardar", MessageBoxButtons.OKCancel);
+			if (dialog == DialogResult.Cancel)
+				return;
+			using(var con = new DbContexto())
+			{
+				try
+				{
+					con.NOTAS.Remove(NotaCorriente);
+					con.SaveChanges();
+					CursosText.Text = string.Empty;
+					DescripcionText.Text = string.Empty;
+					NotaText.Text = string.Empty;
+					TrimestreText.Text = string.Empty;
+					IDText.Text = string.Empty;
+					MostrarNotas.DataSource = con.NOTAS.ToList<NOTAS>();
+				}
+				catch
+				{
+					MessageBox.Show("Error al borrar");
+				}
+			}
+		
+		}
+	}
 }
 

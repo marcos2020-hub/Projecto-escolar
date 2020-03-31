@@ -1,64 +1,66 @@
-﻿//using DataLayer.Entidades;
-//using System.Data.SQLite.EF6;
-//using System;
-//using System.Collections.Generic;
-//using System.Text;
-//using System.Data;
+﻿using DataLayer.Entidades;
 
-//namespace DataLayer.Contexto
-//{
-//    //El pakete
-//    // https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/3.1.2?_src=template
-//    public class DbContexto : Dbcontext
-//    {
-//        // qui creas un daset un data set es solo un acceso rapido es opcional si se quiere usar
-//        public DbSet<Clave> Usuarios { get; set; }
-//        public DbSet<Alumnos> Alumnos { get; set; }
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Data;
+using Microsoft.EntityFrameworkCore;
 
-//        public DbSet<Docente> Docentes { get; set; }
-//        public DbSet<AULAS> Aulas { get; set; }
+namespace DataLayer.Contexto
+{
+	//El pakete
+	// https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Sqlite/3.1.2?_src=template
+	public class DbContexto : DbContext
+	{
+		// qui creas un daset un data set es solo un acceso rapido es opcional si se quiere usar
+		public DbSet<Clave> Usuarios { get; set; }
+		public DbSet<Alumnos> Alumnos { get; set; }
 
-//        public DbSet<NOTAS> NOTAS { get; set; }
+		public DbSet<Docente> Docentes { get; set; }
+		public DbSet<AULAS> Aulas { get; set; }
 
-//        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-//        {
-//            optionsBuilder.UseSqlite("Data Source=CONTROLESCOLAR.db");
-//        }
-//        protected override void OnModelCreating(ModelBuilder modelBuilder)
-//        {
-//            region se usa para marcar blokes de codigo para que sea mas facil de separar
-//            aqui tienes que mappear tus entidades esto es un poco complicado de entender pero como tu base de datos es simple
-//             solo mapealas asi
-//            #region Docente
-//            modelBuilder.Entity<Docente>().HasKey(x => x.ID);
-//            modelBuilder.Entity<Docente>().HasIndex(x => x.CEDULA).IsUnique();
+		public DbSet<NOTAS> NOTAS { get; set; }
 
-//            modelBuilder.Entity<Docente>().ToTable("DOCENTE");
-//            #endregion
-//            #region Clave
-//            modelBuilder.Entity<Clave>().HasKey(x => x.ID);
-//            modelBuilder.Entity<Clave>().ToTable("CLAVE");
-//            #endregion
+		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+		{
+			optionsBuilder.UseSqlite("Data Source=CONTROLESCOLAR.db");
+		}
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
+			//region se usa para marcar blokes de codigo para que sea mas facil de separar
+			//aqui tienes que mappear tus entidades esto es un poco complicado de entender pero como tu base de datos es simple
 
-//            #region Alumnos 
-//            modelBuilder.Entity<Alumnos>().HasKey(x => x.ID);
-//            modelBuilder.Entity<Alumnos>().HasIndex(x => x.MATRICULA).IsUnique();
+			// solo mapealas asi
+			#region Docente
+			modelBuilder.Entity<Docente>().HasKey(x => x.ID);
+			modelBuilder.Entity<Docente>().HasIndex(x => x.CEDULA).IsUnique();
 
-//            modelBuilder.Entity<Alumnos>().ToTable("ALUMNOS");
-//            #endregion
-//            modelBuilder.Entity<AULAS>().HasKey(x => x.ID);
-//            modelBuilder.Entity<AULAS>().ToTable("AULAS");
+			modelBuilder.Entity<Docente>().ToTable("DOCENTE");
+			#endregion
+			#region Clave
+			modelBuilder.Entity<Clave>().HasKey(x => x.ID);
+			modelBuilder.Entity<Clave>().ToTable("CLAVE");
+			#endregion
 
-//            #region NOTAS
-//            modelBuilder.Entity<NOTAS>().HasKey(x => x.ID);
-//            modelBuilder.Entity<NOTAS>().HasIndex(x => x.TRIMESTRE).IsUnique();
+			#region Alumnos 
+			modelBuilder.Entity<Alumnos>().HasKey(x => x.ID);
+			modelBuilder.Entity<Alumnos>().HasIndex(x => x.MATRICULA).IsUnique();
 
-//            modelBuilder.Entity<NOTAS>().ToTable("NOTAS");
+			modelBuilder.Entity<Alumnos>().ToTable("ALUMNOS");
+			#endregion
+			modelBuilder.Entity<AULAS>().HasKey(x => x.ID);
+			modelBuilder.Entity<AULAS>().ToTable("AULAS");
 
-//            #endregion
-//        }
-//    }
-//}
+			#region NOTAS
+			modelBuilder.Entity<NOTAS>().HasKey(x => x.ID);
+			modelBuilder.Entity<NOTAS>().HasIndex(x => x.TRIMESTRE).IsUnique();
+
+			modelBuilder.Entity<NOTAS>().ToTable("NOTAS");
+
+			#endregion
+		}
+	}
+}
 
 
 

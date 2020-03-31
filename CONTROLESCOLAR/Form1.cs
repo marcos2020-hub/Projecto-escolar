@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DataLayer.Contexto;
+using Microsoft.EntityFrameworkCore;
 
 namespace ControlEscolar
 {
@@ -24,18 +25,20 @@ namespace ControlEscolar
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            Validarusuario();
-        }
+			button1.Enabled = false;
+            await Validarusuario();
+			button1.Enabled = true;
+		}
 
        
 
-        void Validarusuario()
+         async Task Validarusuario()
         {
             using(var con = new DbContexto())
             {
-               var resultado = con.Usuarios.FirstOrDefault(x => x.USUARIO == textBox1.Text && x.CLAVE == textBox2.Text);
+               var resultado =  await  con.Usuarios.FirstOrDefaultAsync(x => x.USUARIO == textBox1.Text && x.CLAVE == textBox2.Text);
                 if (resultado == null)
                     MessageBox.Show( "¿ Si No Tienes una Cuenta ,   Registrate ?");
                 else
