@@ -1,5 +1,4 @@
 ﻿using DataLayer.Entidades;
-
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,6 +19,10 @@ namespace DataLayer.Contexto
 		public DbSet<AULAS> Aulas { get; set; }
 
 		public DbSet<NOTAS> NOTAS { get; set; }
+
+		public DbSet<Matricula> MATRICULA { get; set; }
+
+		public DbSet<CALIFICACIONES> CALIFICACIONEs { get; set; }
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
@@ -45,9 +48,9 @@ namespace DataLayer.Contexto
 			#region Alumnos 
 			modelBuilder.Entity<Alumnos>().HasKey(x => x.ID);
 			modelBuilder.Entity<Alumnos>().HasIndex(x => x.MATRICULA).IsUnique();
-
 			modelBuilder.Entity<Alumnos>().ToTable("ALUMNOS");
 			#endregion
+
 			modelBuilder.Entity<AULAS>().HasKey(x => x.ID);
 			modelBuilder.Entity<AULAS>().ToTable("AULAS");
 
@@ -56,10 +59,24 @@ namespace DataLayer.Contexto
 			modelBuilder.Entity<NOTAS>().HasIndex(x => x.TRIMESTRE).IsUnique();
 
 			modelBuilder.Entity<NOTAS>().ToTable("NOTAS");
+            #endregion
 
+            #region MATRICULA
+            modelBuilder.Entity<Matricula>().HasKey(x => x.ID);
+			modelBuilder.Entity<Matricula>().HasIndex(x => x.MATRICULA).IsUnique();// sabes para que se usa esa linea
+
+			modelBuilder.Entity<Matricula>().ToTable("MATRICULA");
+
+			#region
+			modelBuilder.Entity<CALIFICACIONES>().HasKey(x => x.ID);
+			modelBuilder.Entity<CALIFICACIONES>().HasIndex(x => x.MATERIA).IsUnique();// sabes para que se usa esa linea
+			
+			modelBuilder.Entity<CALIFICACIONES>().ToTable("CALIFICACIONES");
 			#endregion
+			#endregion
+
 		}
-	}
+    }
 }
 
 

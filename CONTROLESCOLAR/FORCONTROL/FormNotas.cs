@@ -37,7 +37,7 @@ namespace ControlEscolar
             using (var con = new DbContexto())
             {
                 MostrarNotas.DataSource = con.NOTAS.ToList<NOTAS>();
-
+                label7.Text = "TOTAL DE REGISTROS INGRESADO A LA TABLA :" + MostrarNotas.Rows.Count.ToString();
 
             }
         }
@@ -47,7 +47,7 @@ namespace ControlEscolar
             // por que aqui tienes que avriguar si el usuario es editando o creado un post nuevo 
             // pero ya me doy cuenta de que no necesito la variable esnuevo  por que puedo averiguarlo con la otra 
             // si la nota esta en null pues es una nota nueva 7
-            
+            // se to olvida este blocke aqui validas si la varble eata null 
             if (NotaCorriente == null)
             {
                 var dialog = MessageBox.Show("No has eligido una nota deseas crear una nueva ?",
@@ -61,7 +61,7 @@ namespace ControlEscolar
                     NOTA = NotaText.Text,
                     TRIMESTRE = TrimestreText.Text
                 };
-                esnuevo = true;
+                esnuevo = true;// luego aqui pones si es nuevo 
 
             }
 
@@ -137,7 +137,7 @@ namespace ControlEscolar
                     }
                     // y si la lista tiene resultados pues le metemos esos datos aqui 
                     MostrarNotas.DataSource = resultado;
-
+                    label7.Text = "TOTAL DE REGISTROS BUSCADOS EN LA TABLA :" + MostrarNotas.Rows.Count.ToString();
                 }
             }
             catch (Exception a)
@@ -183,7 +183,7 @@ namespace ControlEscolar
 		{
 			if (esnuevo || NotaCorriente == null) {
 				MessageBox.Show("Para poder borrar tienes que elegir una nota de la base de datos");
-}	
+        }	
 			var dialog = MessageBox.Show("Esta seguro de borrar esta nota?",
 		 "Guardar", MessageBoxButtons.OKCancel);
 			if (dialog == DialogResult.Cancel)
@@ -199,6 +199,7 @@ namespace ControlEscolar
 					NotaText.Text = string.Empty;
 					TrimestreText.Text = string.Empty;
 					IDText.Text = string.Empty;
+                    NotaCorriente = null;
 					MostrarNotas.DataSource = con.NOTAS.ToList<NOTAS>();
 				}
 				catch

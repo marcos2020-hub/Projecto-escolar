@@ -28,71 +28,98 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.MatriculadataGridView = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.CorreoText = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.GrupoText = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.GradoText = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.ApellidosText = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.NombreText = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.MatriculaText = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IDtxt = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MatriculadataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // MatriculadataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 254);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(797, 311);
-            this.dataGridView1.TabIndex = 0;
+            this.MatriculadataGridView.BackgroundColor = System.Drawing.Color.Navy;
+            this.MatriculadataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MatriculadataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MatriculadataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.MatriculadataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Yellow;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.MediumSpringGreen;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.MatriculadataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.MatriculadataGridView.GridColor = System.Drawing.Color.LightSlateGray;
+            this.MatriculadataGridView.Location = new System.Drawing.Point(2, 254);
+            this.MatriculadataGridView.Name = "MatriculadataGridView";
+            this.MatriculadataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.MatriculadataGridView.RowHeadersVisible = false;
+            this.MatriculadataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.MatriculadataGridView.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.Yellow;
+            this.MatriculadataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.MatriculadataGridView.Size = new System.Drawing.Size(711, 311);
+            this.MatriculadataGridView.TabIndex = 0;
+            this.MatriculadataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MatriculadataGridView_CellContentClick);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.CorreoText);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.GrupoText);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.GradoText);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.ApellidosText);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.NombreText);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.MatriculaText);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.IDtxt);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(289, 226);
             this.panel1.TabIndex = 1;
             // 
-            // textBox7
+            // CorreoText
             // 
-            this.textBox7.BackColor = System.Drawing.Color.SpringGreen;
-            this.textBox7.Location = new System.Drawing.Point(81, 160);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(181, 20);
-            this.textBox7.TabIndex = 11;
+            this.CorreoText.BackColor = System.Drawing.Color.SpringGreen;
+            this.CorreoText.Location = new System.Drawing.Point(81, 160);
+            this.CorreoText.Name = "CorreoText";
+            this.CorreoText.Size = new System.Drawing.Size(181, 20);
+            this.CorreoText.TabIndex = 11;
             // 
             // label9
             // 
@@ -103,13 +130,13 @@
             this.label9.TabIndex = 10;
             this.label9.Text = "GRADO:";
             // 
-            // textBox6
+            // GrupoText
             // 
-            this.textBox6.BackColor = System.Drawing.Color.Lime;
-            this.textBox6.Location = new System.Drawing.Point(198, 130);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(48, 20);
-            this.textBox6.TabIndex = 9;
+            this.GrupoText.BackColor = System.Drawing.Color.Lime;
+            this.GrupoText.Location = new System.Drawing.Point(198, 130);
+            this.GrupoText.Name = "GrupoText";
+            this.GrupoText.Size = new System.Drawing.Size(48, 20);
+            this.GrupoText.TabIndex = 9;
             // 
             // label6
             // 
@@ -120,13 +147,13 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "CORREO:";
             // 
-            // textBox5
+            // GradoText
             // 
-            this.textBox5.BackColor = System.Drawing.Color.Lime;
-            this.textBox5.Location = new System.Drawing.Point(82, 130);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(48, 20);
-            this.textBox5.TabIndex = 9;
+            this.GradoText.BackColor = System.Drawing.Color.Lime;
+            this.GradoText.Location = new System.Drawing.Point(82, 130);
+            this.GradoText.Name = "GradoText";
+            this.GradoText.Size = new System.Drawing.Size(48, 20);
+            this.GradoText.TabIndex = 9;
             // 
             // label5
             // 
@@ -137,13 +164,13 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "GRUPO:";
             // 
-            // textBox4
+            // ApellidosText
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Lime;
-            this.textBox4.Location = new System.Drawing.Point(82, 106);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(180, 20);
-            this.textBox4.TabIndex = 7;
+            this.ApellidosText.BackColor = System.Drawing.Color.Lime;
+            this.ApellidosText.Location = new System.Drawing.Point(82, 106);
+            this.ApellidosText.Name = "ApellidosText";
+            this.ApellidosText.Size = new System.Drawing.Size(180, 20);
+            this.ApellidosText.TabIndex = 7;
             // 
             // label4
             // 
@@ -154,13 +181,13 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "APELLDOS:";
             // 
-            // textBox3
+            // NombreText
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Lime;
-            this.textBox3.Location = new System.Drawing.Point(82, 82);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(180, 20);
-            this.textBox3.TabIndex = 5;
+            this.NombreText.BackColor = System.Drawing.Color.Lime;
+            this.NombreText.Location = new System.Drawing.Point(82, 82);
+            this.NombreText.Name = "NombreText";
+            this.NombreText.Size = new System.Drawing.Size(180, 20);
+            this.NombreText.TabIndex = 5;
             // 
             // label3
             // 
@@ -171,13 +198,13 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "NOMBRE";
             // 
-            // textBox2
+            // MatriculaText
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Lime;
-            this.textBox2.Location = new System.Drawing.Point(81, 53);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(181, 20);
-            this.textBox2.TabIndex = 3;
+            this.MatriculaText.BackColor = System.Drawing.Color.Lime;
+            this.MatriculaText.Location = new System.Drawing.Point(81, 53);
+            this.MatriculaText.Name = "MatriculaText";
+            this.MatriculaText.Size = new System.Drawing.Size(181, 20);
+            this.MatriculaText.TabIndex = 3;
             // 
             // label2
             // 
@@ -189,13 +216,13 @@
             this.label2.Text = "MATRICULA:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
+            // IDtxt
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Lime;
-            this.textBox1.Location = new System.Drawing.Point(82, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(39, 20);
-            this.textBox1.TabIndex = 1;
+            this.IDtxt.BackColor = System.Drawing.Color.Lime;
+            this.IDtxt.Location = new System.Drawing.Point(82, 24);
+            this.IDtxt.Name = "IDtxt";
+            this.IDtxt.Size = new System.Drawing.Size(39, 20);
+            this.IDtxt.TabIndex = 1;
             // 
             // label1
             // 
@@ -215,16 +242,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "GUARDAR";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(297, 55);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "EDITAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button3
             // 
@@ -235,6 +253,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "ELIMINAR";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -245,6 +264,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "LIMPIAR";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -255,12 +275,13 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "MOSTRAR";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(23, 13);
+            this.label7.Location = new System.Drawing.Point(14, 15);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(211, 39);
             this.label7.TabIndex = 7;
@@ -269,7 +290,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(556, 568);
+            this.label8.Location = new System.Drawing.Point(418, 568);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 13);
             this.label8.TabIndex = 8;
@@ -278,7 +299,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(486, 43);
+            this.panel2.Location = new System.Drawing.Point(448, 53);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(246, 71);
             this.panel2.TabIndex = 9;
@@ -287,21 +308,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 589);
+            this.ClientSize = new System.Drawing.Size(715, 589);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.MatriculadataGridView);
             this.Name = "FormMatricula";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMatricula";
             this.Load += new System.EventHandler(this.FormMatricula_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MatriculadataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -313,29 +333,28 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView MatriculadataGridView;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox GrupoText;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox GradoText;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox ApellidosText;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox NombreText;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox MatriculaText;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox IDtxt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox CorreoText;
         private System.Windows.Forms.Label label9;
     }
 }

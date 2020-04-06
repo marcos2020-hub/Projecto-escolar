@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Wilirambo\\Documents\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj": {}
+    "C:\\Users\\MARCOS\\Documents\\Visual Studio 2019\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Wilirambo\\Documents\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj": {
+    "C:\\Users\\MARCOS\\Documents\\Visual Studio 2019\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Wilirambo\\Documents\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\MARCOS\\Documents\\Visual Studio 2019\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\Wilirambo\\Documents\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj",
-        "packagesPath": "C:\\Users\\Wilirambo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Wilirambo\\Documents\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\obj\\",
+        "projectPath": "C:\\Users\\MARCOS\\Documents\\Visual Studio 2019\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\MARCOS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MARCOS\\Documents\\Visual Studio 2019\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Wilirambo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\MARCOS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -45,7 +40,7 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[2.2.1, )"
+              "version": "[2.2.2, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -64,7 +59,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

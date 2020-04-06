@@ -121,9 +121,11 @@
             // 
             // Mostrar
             // 
+            this.Mostrar.BackgroundColor = System.Drawing.Color.Blue;
             this.Mostrar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Mostrar.Location = new System.Drawing.Point(12, 263);
             this.Mostrar.Name = "Mostrar";
+            this.Mostrar.RowHeadersVisible = false;
             this.Mostrar.Size = new System.Drawing.Size(776, 252);
             this.Mostrar.TabIndex = 2;
             // 

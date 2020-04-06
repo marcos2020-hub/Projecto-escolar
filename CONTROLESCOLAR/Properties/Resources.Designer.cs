@@ -63,6 +63,16 @@ namespace ControlEscolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap actualizar {
+            get {
+                object obj = ResourceManager.GetObject("actualizar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ALTA {
             get {
                 object obj = ResourceManager.GetObject("ALTA", resourceCulture);
@@ -76,6 +86,26 @@ namespace ControlEscolar.Properties {
         internal static System.Drawing.Bitmap Biblioteca_Escolar {
             get {
                 object obj = ResourceManager.GetObject("Biblioteca-Escolar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BUESKEDA {
+            get {
+                object obj = ResourceManager.GetObject("BUESKEDA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BUSCAR {
+            get {
+                object obj = ResourceManager.GetObject("BUSCAR", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,6 +213,16 @@ namespace ControlEscolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap GUARDAR {
+            get {
+                object obj = ResourceManager.GetObject("GUARDAR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap imprimir {
             get {
                 object obj = ResourceManager.GetObject("imprimir", resourceCulture);
@@ -196,6 +236,16 @@ namespace ControlEscolar.Properties {
         internal static System.Drawing.Bitmap limpiar {
             get {
                 object obj = ResourceManager.GetObject("limpiar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap limpiar1 {
+            get {
+                object obj = ResourceManager.GetObject("limpiar1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

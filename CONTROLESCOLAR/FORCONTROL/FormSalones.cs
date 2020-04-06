@@ -22,6 +22,7 @@ namespace ControlEscolar
             using (var con = new DbContexto()) 
             {
                 Mostrar.DataSource = con.Aulas.ToList<AULAS>();
+                label5.Text = " Total de Registros: " + Convert.ToString(Mostrar.Rows.Count - 1);
             }
         }
 

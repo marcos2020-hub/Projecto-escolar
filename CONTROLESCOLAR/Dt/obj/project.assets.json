@@ -1336,7 +1336,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "TWVa0lElMsc3y+qj1nza2MpFxo6qfSHGOpUGmQmTmPRVGW8jcruIXknHnYaT0oSKZA0AAbpTiHilsFukP0E2Pg==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -1351,12 +1351,11 @@
       ]
     },
     "Microsoft.NETCore.Targets/1.0.1": {
-      "sha512": "uoCrgIGGKOGgZcw9rv+LHPFAUtVvJC5JUhMrYNQjg9tiNJpdvj3Z7K9RiDEoI6xm79pYuDHi537R+SXCb6y8oQ==",
+      "sha512": "rkn+fKobF/cbWfnnfBOQHKVKIOpxMZBvlSHkqDWgBpwGDcLRduvs3D9OLGeV6GWGvVwNlVi2CBbTjuPmtHvyNw==",
       "type": "package",
       "path": "microsoft.netcore.targets/1.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -3413,7 +3412,7 @@
       ]
     },
     "System.Runtime.InteropServices.RuntimeInformation/4.0.0": {
-      "sha512": "vMoSAMtzOedZjsFyVSeSV9nUBxPqO/Q7NeIYuuhlDzyDW4TdVV9aUU1qJsUW7LK0ctzcnJeWlVPaLnnS/N4SIw==",
+      "sha512": "hWPhJxc453RCa8Z29O91EmfGeZIHX1ZH2A8L6lYQVSaKzku2DfArSfMEb1/MYYzPQRJZeu0c9dmYeJKxW5Fgng==",
       "type": "package",
       "path": "system.runtime.interopservices.runtimeinformation/4.0.0",
       "files": [
@@ -4033,27 +4032,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Wilirambo\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\MARCOS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wilirambo\\Documents\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj",
+      "projectUniqueName": "C:\\Users\\MARCOS\\Documents\\Visual Studio 2019\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj",
       "projectName": "DataLayer",
-      "projectPath": "C:\\Users\\Wilirambo\\Documents\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj",
-      "packagesPath": "C:\\Users\\Wilirambo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wilirambo\\Documents\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\obj\\",
+      "projectPath": "C:\\Users\\MARCOS\\Documents\\Visual Studio 2019\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\DataLayer.csproj",
+      "packagesPath": "C:\\Users\\MARCOS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MARCOS\\Documents\\Visual Studio 2019\\Projecto-escolar\\CONTROLESCOLAR\\Dt\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Wilirambo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\MARCOS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -4088,10 +4080,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

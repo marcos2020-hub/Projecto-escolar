@@ -16,6 +16,7 @@ namespace ControlEscolar
         {
             InitializeComponent();
             panel1.BackColor = Color.FromArgb(125, Color.Tomato);
+          //  label3.Text = " Total de Registros: " + Convert.ToString(Mostrar.Rows.Count - 1);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

@@ -1,0 +1,9 @@
+C:\Users\MARCOS\Documents\Visual Studio 2019\Projecto-escolar\CONTROLESCOLAR\Dt\bin\Release\netstandard2.0\DataLayer.deps.json
+C:\Users\MARCOS\Documents\Visual Studio 2019\Projecto-escolar\CONTROLESCOLAR\Dt\bin\Release\netstandard2.0\DataLayer.dll
+C:\Users\MARCOS\Documents\Visual Studio 2019\Projecto-escolar\CONTROLESCOLAR\Dt\bin\Release\netstandard2.0\DataLayer.pdb
+C:\Users\MARCOS\Documents\Visual Studio 2019\Projecto-escolar\CONTROLESCOLAR\Dt\obj\Release\netstandard2.0\DataLayer.csprojAssemblyReference.cache
+C:\Users\MARCOS\Documents\Visual Studio 2019\Projecto-escolar\CONTROLESCOLAR\Dt\obj\Release\netstandard2.0\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\MARCOS\Documents\Visual Studio 2019\Projecto-escolar\CONTROLESCOLAR\Dt\obj\Release\netstandard2.0\DataLayer.AssemblyInfoInputs.cache
+C:\Users\MARCOS\Documents\Visual Studio 2019\Projecto-escolar\CONTROLESCOLAR\Dt\obj\Release\netstandard2.0\DataLayer.AssemblyInfo.cs
+C:\Users\MARCOS\Documents\Visual Studio 2019\Projecto-escolar\CONTROLESCOLAR\Dt\obj\Release\netstandard2.0\DataLayer.dll
+C:\Users\MARCOS\Documents\Visual Studio 2019\Projecto-escolar\CONTROLESCOLAR\Dt\obj\Release\netstandard2.0\DataLayer.pdb

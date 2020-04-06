@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.FechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.PermisoText = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -61,7 +62,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.FechaDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -99,6 +99,13 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS DOCENTES";
+            // 
+            // FechaDateTimePicker
+            // 
+            this.FechaDateTimePicker.Location = new System.Drawing.Point(416, 171);
+            this.FechaDateTimePicker.Name = "FechaDateTimePicker";
+            this.FechaDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.FechaDateTimePicker.TabIndex = 21;
             // 
             // label12
             // 
@@ -342,6 +349,7 @@
             this.button5.TabIndex = 3;
             this.button5.Text = "LIMPIAR";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -394,13 +402,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(712, 512);
             this.panel1.TabIndex = 5;
-            // 
-            // FechaDateTimePicker
-            // 
-            this.FechaDateTimePicker.Location = new System.Drawing.Point(416, 171);
-            this.FechaDateTimePicker.Name = "FechaDateTimePicker";
-            this.FechaDateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.FechaDateTimePicker.TabIndex = 21;
             // 
             // FormDocencia
             // 

@@ -263,6 +263,11 @@ namespace ControlEscolar
 
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
